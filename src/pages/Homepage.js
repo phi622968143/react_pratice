@@ -13,7 +13,7 @@ const Homepage = () => {
   let [currents,setcurrents]=useState("");
   const auth = "KzcEea0YftasFJ3dZk6gIuCdCgFdr7VVaLOM6y3Py6E8z6XFYPI7GK4m ";
   const initurl="https://api.pexels.com/v1/curated?page=1&per_page=9";
-  const searchurl=`https://api.pexels.com/v1/search?query=${input}&per_page=6`;
+  const searchurl=`https://api.pexels.com/v1/search?query=${input}&per_page=9`;
 
   const search= async()=>{
       let result=await axios.get(searchurl,{headers:{Authorization:auth}});//do action as url
